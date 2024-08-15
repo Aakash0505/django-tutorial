@@ -19,6 +19,8 @@ from home import views as homeviews
 
 urlpatterns = [
     path('',homeviews.home,name='home'),
+    path('about/',homeviews.about,name='about'),
+    path('contact/',homeviews.contact,name='contact'),
     path('admin/', admin.site.urls),
     path('success-page/',homeviews.success,name='success')
 ]
